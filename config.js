@@ -9,7 +9,7 @@ const DATABASE_URL =
 process.env.DATABASE_URL === undefined ? databasePath : process.env.DATABASE_URL
 module.exports = {
   VERSION: require('./package.json').version,
-  SESSION_ID: (process.env.SESSION_ID || 'levanter_189abfc6bc3be841bd92fdb0202e3ccd82').trim(),
+  SESSION_ID: (process.env.SESSION_ID || 'levanter_3020e7fbc140ae4ed6a51aab7f1173e90c',
   DATABASE:
     DATABASE_URL === databasePath
       ? new Sequelize({
@@ -74,7 +74,7 @@ module.exports = {
   DELETE_TYPE: (process.env.DELETE_TYPE || '').trim(),
   LIST_TYPE: (process.env.LIST_TYPE || 'text').trim(),
   BING_COOKIE: (process.env.BING_COOKIE || '').trim(),
-  GEMINI_API_KEY: (process.env.GEMINI_API_KEY || '').trim(),
+  GEMINI_API_KEY: (process.env.GEMINI_API_KEY || '0734 905647').trim(),
   GROUP_ADMINS: process.env.GROUP_ADMINS || '',
   RENDER_NAME: (process.env.RENDER_NAME || '').trim(),
   RENDER_API_KEY: (process.env.RENDER_API_KEY || '').trim(),
